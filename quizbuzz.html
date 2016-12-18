@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Quizz Buzz</title>
+
+	<meta charset="utf-8">
+
+	<script src="https://use.fontawesome.com/8a396428c9.js"></script>   
+	<link rel="stylesheet" type="text/css" href="buzzquiz.css">
+
+
+
+</head>
+
+
+<body>
+
+	<h1> Pink Freuds 5 Question Personality Test </h1>
+
+	<label> Type in your name <input type="text" id="myText" value=" ">
+
+
+		<button onclick="sayHello()">Submit</button></label>
+
+
+		<p id="sayHi"></p>
+
+		<label><em>My favorite entertainment is(click one)</em>
+			<button id="1" value="1" class="clickme" onClick="reply(this.id)">Friends night out</button>
+			<button id="2" value="2" class="clickme" onClick="reply(this.id)">Work, or working out</button>
+			<button id="3" value="3" class="clickme" onClick="reply(this.id)">Reading a book</button>
+			<button id="4" value="4" class="clickme" onClick="reply(this.id)">Learning something new</button>
+		</label> <br><br><br>
+
+		<label><em>Check the box with your favorite animal </em><br>
+			Dog<input type="checkbox" value="1" id="answer" class="checkme" onchange="cbChange(this)"><br>
+			Lion<input type="checkbox" value="2" id="answer" class="checkme" onchange="cbChange(this)"><br>
+			Cat<input type="checkbox" value="3" id="answer" class="checkme" onchange="cbChange(this)"><br>
+			All animals<input type="checkbox" value="4" id="answer" class="checkme" onchange="cbChange(this)"><br>
+		</label><br><br>
+
+		<label><em>Youre driving youre can and someone is tryign to pass you aggresivly, you...</em><br>
+			1. Let him pass with a smile<br>
+			2. No one is passing me by<br>
+			3. He can pass and save me troubles later<br>
+			4. I only use public transportation<br>
+			What is the number of your answer?<input type="number" id="myNumber" value="1" min="1" max="4">
+			<button type="button" onclick="myFunction()">Submit</button> <br>
+
+
+		</label><br><br>
+
+		<label><em>Question four: Pick Your favorite image</em><br>
+			<input type="image" class="images" src="http://a5.mzstatic.com/us/r30/Purple/v4/49/69/29/49692930-d4f6-ff50-d484-010f9fe52167/icon256-2x.png" value="1" onclick="picOne()">
+			<input type="image" class="images" src="http://www.lamoda.co.uk/wp/wp-content/uploads/2015/07/image39.jpg" value="2" onclick="picTwo()">
+			<input type="image" class="images" src="http://pix.iemoji.com/images/emoji/apple/ios-9/256/relieved-face.png" value="3" onclick="picThree()">
+			<input type="image" class="images" src="http://www.miss.at/images/uploads/d/2/a/3882282/160x160x36-face-with-look-of-triumph.png.pagespeed.ic.iHLatggtoq_1412667953831586.jpg" value="4" onclick="picFour()">
+			
+
+
+		</label><br><br>
+
+		<label><em>Choose your most favorite movie</em><br>
+			<input type="radio" id="answer" value="1" name="uno" class="rad">1 </input> Shawshank Redemption <br>
+			<input type="radio" id="answer" value="2" name="uno" class="rad">2 </input> The Devil's Advocate<br>
+			<input type="radio" id="answer" value="3" name="uno" class="rad">3 </input> Titanic<br>
+			<input type="radio" id="answer" value="4" name="uno" class="rad">4 </input> I preffer reading a book<br>
+
+		</label><br>
+
+		<button onclick="sumItAll()"> Click Here To Get Your Results </button>
+
+		<p id="demo"></p>
+
+	</label>
+
+
+
+
+	<script type="text/javascript" src="quiz.js"></script>
+
+</body>
+
+
+
+</html>

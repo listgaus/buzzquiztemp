@@ -1,0 +1,8 @@
+.images{
+	width:30px;
+	height:30px;
+}
+
+.clickme:active{
+	background-color: yellow;
+}
